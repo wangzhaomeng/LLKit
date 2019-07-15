@@ -1,0 +1,16 @@
+PODS:
+  - LLKit (0.1.0)
+
+DEPENDENCIES:
+  - LLKit (from `../`)
+
+EXTERNAL SOURCES:
+  LLKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LLKit: 5f3a6c41002495bdd9f533f5faabca215fd8eba3
+
+PODFILE CHECKSUM: 727e15656e8df6939afa153fd7b4e3f2feabc141
+
+COCOAPODS: 1.7.4

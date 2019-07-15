@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27B2F8840D5238667E8D2D55 /* LLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LLKit.podspec; path = ../LLKit.podspec; sourceTree = "<group>"; };
+		27B2F8840D5238667E8D2D55 /* LLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLKit.podspec; path = ../LLKit.podspec; sourceTree = "<group>"; };
 		3DA8236727770C15BBFEA73D /* Pods_LLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		468902718921CB4E4D74FDF3 /* Pods_LLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C9C2A14430483DCC02AFD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		46C9C2A14430483DCC02AFD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79BF5170D09D2AD8D8D375FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		79BF5170D09D2AD8D8D375FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED63BA15AAB2B3BF6F1506F /* Pods-LLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Tests/Pods-LLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C381F17737955DD11527C9BA /* Pods-LLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				188193B4706B0B73BEEFB010 /* [CP] Embed Pods Frameworks */,
+				C69CF4C48362A4ECD921C4BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wangzhaomeng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = F66A99Y6V4;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -257,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -294,13 +298,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		188193B4706B0B73BEEFB010 /* [CP] Embed Pods Frameworks */ = {
+		C69CF4C48362A4ECD921C4BD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LLKit/LLKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -309,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EB40C2905B0B4777AACF495C /* [CP] Check Pods Manifest.lock */ = {
@@ -485,6 +489,7 @@
 			baseConfigurationReference = C381F17737955DD11527C9BA /* Pods-LLKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F66A99Y6V4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LLKit/LLKit-Prefix.pch";
 				INFOPLIST_FILE = "LLKit/LLKit-Info.plist";
@@ -501,6 +506,7 @@
 			baseConfigurationReference = DDB3EDF0A1F5DB917EFEF6F2 /* Pods-LLKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F66A99Y6V4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LLKit/LLKit-Prefix.pch";
 				INFOPLIST_FILE = "LLKit/LLKit-Info.plist";
